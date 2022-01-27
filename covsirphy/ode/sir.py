@@ -7,9 +7,9 @@ from covsirphy.util.error import deprecate
 from covsirphy.ode.mbase import ModelBase
 
 
-class SIRV(ModelBase):
+class SIR(ModelBase):
     """
-    SIR-V model.
+    SIR model.
 
     Args:
         population (int): total population
@@ -25,7 +25,7 @@ class SIRV(ModelBase):
         vacrate (float)
     """
     # Model name
-    NAME = "SIR-V"
+    NAME = "SIR"
     # names of parameters
     PARAMETERS = ["theta", "kappa", "rho", "sigma","phi","beta","myu","gammaa","delta","vacrate"]
     DAY_PARAMETERS = [
